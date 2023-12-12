@@ -1,0 +1,40 @@
+@media only screen and (max-width: 600px) {
+    header {
+        background-position: center;
+    }
+
+    #Home .container {
+        width: 90%;
+        border-radius: 50px;
+    }
+
+    #Home .my-card {
+        width: 90%;
+        margin-top: 40px;
+    }
+
+    #Home .my-card::before {
+        font-size: 80px;
+    }
+
+    #Home .my-card::after {
+        font-size: 80px;
+    }
+
+    #Home .my-card .author-name h2 {
+        font-size: 30px;
+    }
+
+    #Home .my-card .author-quote p {
+        font-size: 30px;
+    }
+
+    #Home .button {
+        padding-top: 40px;
+    }
+
+    #Home .button button {
+        font-size: 14px;
+        padding: 8px 16px;
+    }
+}

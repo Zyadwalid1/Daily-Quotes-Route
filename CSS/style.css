@@ -1,0 +1,165 @@
+/* Global styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --caveat-font: 'Caveat', cursive;
+    --libre-font: 'Libre Baskerville', serif;
+}
+
+.caveat {
+    font-weight: 600;
+    font-family: 'Caveat', cursive;
+}
+
+.libre {
+    font-weight: 400;
+    font-family: 'Libre Baskerville', serif;
+}
+
+.show {
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+/* CSS to colorize selected/highlighted text */
+::selection {
+    background-color: rgba(119, 29, 183, 0.7);
+}
+
+/* Navbar Styling */
+
+.text-gred span {
+    background: rgb(106, 124, 115);
+    background: linear-gradient(180deg, rgba(106, 124, 115, 1) 0%, rgba(119, 29, 183, 1) 5%, rgba(201, 28, 86, 1) 100%, rgba(77, 73, 76, 1) 100%);
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.hov {
+    color: #fff;
+    position: relative;
+    transition: all 0.5s ease-in-out;
+}
+
+.hov::before {
+    content: "";
+    width: 0;
+    transform: translateY(45px);
+    height: 2px;
+    background: rgb(106, 124, 115);
+    background: linear-gradient(180deg, rgba(106, 124, 115, 1) 0%, rgba(119, 29, 183, 1) 5%, rgba(201, 28, 86, 1) 100%, rgba(77, 73, 76, 1) 100%);
+    display: block;
+    transition: all 0.5s ease-in-out;
+}
+
+.hov:hover {
+    background: rgb(106, 124, 115);
+    background: linear-gradient(180deg, rgba(106, 124, 115, 1) 0%, rgba(119, 29, 183, 1) 5%, rgba(201, 28, 86, 1) 100%, rgba(77, 73, 76, 1) 100%);
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.hov:hover:before {
+    width: 100%;
+}
+
+/* Header Styling */
+
+header {
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+        url(../imgs/wallpaper.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#Home .container {
+    width: 70%;
+    border-radius: 90px;
+}
+
+#Home .home-caption {
+    position: relative;
+}
+
+#Home .my-card {
+    width: 80%;
+    text-align: center;
+    position: relative;
+    margin-top: 80px;
+}
+
+#Home .my-card::before {
+    content: open-quote;
+    font-family: var(--libre-font);
+    font-size: 100px;
+    font-weight: 700;
+    position: absolute;
+    top: 74%;
+    left: -6%;
+    color: rgba(119, 29, 183, 1);
+}
+
+#Home .my-card::after {
+    content: close-quote;
+    font-family: var(--libre-font);
+    font-size: 100px;
+    font-weight: 700;
+    position: absolute;
+    top: -15%;
+    right: -3%;
+    color: rgba(119, 29, 183, 1);
+}
+
+#Home .my-card .author-name h2 {
+    font-family: var(--libre-font);
+    font-size: 50px;
+    font-weight: 400;
+    background: rgb(106, 124, 115);
+    background: linear-gradient(180deg, rgba(106, 124, 115, 1) 0%, rgba(119, 29, 183, 1) 5%, rgba(201, 28, 86, 1) 100%, rgba(77, 73, 76, 1) 100%);
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+#Home .my-card .author-quote p {
+    font-family: var(--caveat-font);
+    font-weight: 500;
+    font-size: 40px;
+    letter-spacing: 1px;
+    margin-top: 15px;
+    text-align: center;
+    color: #fff;
+}
+
+#Home .button {
+    padding-top: 80px;
+}
+
+#Home .button button {
+    font-family: var(--libre-font);
+    font-weight: 500;
+    font-size: 16px;
+    color: #000;
+    background-color: #FFF;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    transition: all 0.5s ease;
+}
+
+#Home .button button:hover {
+    color: #FFF;
+    background: rgba(119, 29, 183, 1);
+}
